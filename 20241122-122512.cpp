@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a[]= {10,20,100,30,50,5},m,x;
+    if(a[0]>a[1])
+    {
+    x=a[0];
+    m=a[1];
+    }
+    else
+    {
+    x=a[1];
+    m=a[0];
+    }
+    for(int i=1; i<6; i++)
+    {
+        if(a[i]>x)
+            x=a[i];
+        if(a[i]<m)
+            m=a[i];
+    }
+    cout << m << ' ' << x << endl;
+    cout << "Hello World!" << endl;
+    return 0;
+}
